@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44371</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -184,12 +184,138 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\templates\fashe\css\main.css" />
+    <Content Include="Content\templates\fashe\css\util.css" />
+    <Content Include="Content\templates\fashe\fonts\elegant-font\html-css\fonts\ElegantIcons.svg" />
+    <Content Include="Content\templates\fashe\fonts\elegant-font\html-css\style.css" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Content\templates\fashe\fonts\Linearicons-Free-v1.0.0\icon-font.min.css" />
+    <Content Include="Content\templates\fashe\fonts\themify\fonts\themify9f24.svg" />
+    <Content Include="Content\templates\fashe\fonts\themify\themify-icons.css" />
+    <Content Include="Content\templates\fashe\images\banner-02.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-03.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-04.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-05.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-07.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-08.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-10.jpg" />
+    <Content Include="Content\templates\fashe\images\banner-14.jpg" />
+    <Content Include="Content\templates\fashe\images\bg-banner-02.jpg" />
+    <Content Include="Content\templates\fashe\images\bg-video-01.jpg" />
+    <Content Include="Content\templates\fashe\images\blog-01.jpg" />
+    <Content Include="Content\templates\fashe\images\blog-02.jpg" />
+    <Content Include="Content\templates\fashe\images\blog-03.jpg" />
+    <Content Include="Content\templates\fashe\images\blog-04.jpg" />
+    <Content Include="Content\templates\fashe\images\blog-05.jpg" />
+    <Content Include="Content\templates\fashe\images\blog-08.jpg" />
+    <Content Include="Content\templates\fashe\images\gallery-03.jpg" />
+    <Content Include="Content\templates\fashe\images\gallery-07.jpg" />
+    <Content Include="Content\templates\fashe\images\gallery-09.jpg" />
+    <Content Include="Content\templates\fashe\images\gallery-13.jpg" />
+    <Content Include="Content\templates\fashe\images\gallery-15.jpg" />
+    <Content Include="Content\templates\fashe\images\heading-pages-01.jpg" />
+    <Content Include="Content\templates\fashe\images\heading-pages-02.jpg" />
+    <Content Include="Content\templates\fashe\images\heading-pages-05.jpg" />
+    <Content Include="Content\templates\fashe\images\heading-pages-06.jpg" />
+    <Content Include="Content\templates\fashe\images\icons\bg-01.jpg" />
+    <Content Include="Content\templates\fashe\images\icons\discover.png" />
+    <Content Include="Content\templates\fashe\images\icons\express.png" />
+    <Content Include="Content\templates\fashe\images\icons\favicon.png" />
+    <Content Include="Content\templates\fashe\images\icons\icon-header-01.png" />
+    <Content Include="Content\templates\fashe\images\icons\icon-header-02.png" />
+    <Content Include="Content\templates\fashe\images\icons\logo.png" />
+    <Content Include="Content\templates\fashe\images\icons\mastercard.png" />
+    <Content Include="Content\templates\fashe\images\icons\pattern1.html" />
+    <Content Include="Content\templates\fashe\images\icons\paypal.png" />
+    <Content Include="Content\templates\fashe\images\icons\video-16-9.jpg" />
+    <Content Include="Content\templates\fashe\images\icons\visa.png" />
+    <Content Include="Content\templates\fashe\images\item-01.jpg" />
+    <Content Include="Content\templates\fashe\images\item-02.jpg" />
+    <Content Include="Content\templates\fashe\images\item-03.jpg" />
+    <Content Include="Content\templates\fashe\images\item-05.jpg" />
+    <Content Include="Content\templates\fashe\images\item-06.jpg" />
+    <Content Include="Content\templates\fashe\images\item-07.jpg" />
+    <Content Include="Content\templates\fashe\images\item-08.jpg" />
+    <Content Include="Content\templates\fashe\images\item-10.jpg" />
+    <Content Include="Content\templates\fashe\images\item-11.jpg" />
+    <Content Include="Content\templates\fashe\images\item-12.jpg" />
+    <Content Include="Content\templates\fashe\images\item-14.jpg" />
+    <Content Include="Content\templates\fashe\images\item-15.jpg" />
+    <Content Include="Content\templates\fashe\images\item-16.jpg" />
+    <Content Include="Content\templates\fashe\images\item-17.jpg" />
+    <Content Include="Content\templates\fashe\images\item-cart-01.jpg" />
+    <Content Include="Content\templates\fashe\images\item-cart-02.jpg" />
+    <Content Include="Content\templates\fashe\images\item-cart-03.jpg" />
+    <Content Include="Content\templates\fashe\images\master-slide-02.jpg" />
+    <Content Include="Content\templates\fashe\images\master-slide-03.jpg" />
+    <Content Include="Content\templates\fashe\images\master-slide-04.jpg" />
+    <Content Include="Content\templates\fashe\images\master-slide-06.jpg" />
+    <Content Include="Content\templates\fashe\images\master-slide-07.jpg" />
+    <Content Include="Content\templates\fashe\images\master-slide-08.jpg" />
+    <Content Include="Content\templates\fashe\images\product-detail-01.jpg" />
+    <Content Include="Content\templates\fashe\images\product-detail-02.jpg" />
+    <Content Include="Content\templates\fashe\images\product-detail-03.jpg" />
+    <Content Include="Content\templates\fashe\images\shop-item-09.jpg" />
+    <Content Include="Content\templates\fashe\images\thumb-item-01.jpg" />
+    <Content Include="Content\templates\fashe\images\thumb-item-02.jpg" />
+    <Content Include="Content\templates\fashe\images\thumb-item-03.jpg" />
+    <Content Include="Content\templates\fashe\js\main.js" />
+    <Content Include="Content\templates\fashe\js\map-custom.js" />
+    <Content Include="Content\templates\fashe\js\slick-custom.js" />
+    <Content Include="Content\templates\fashe\vendor\animate\animate.css" />
+    <Content Include="Content\templates\fashe\vendor\animsition\css\animsition.min.css" />
+    <Content Include="Content\templates\fashe\vendor\animsition\js\animsition.min.js" />
+    <Content Include="Content\templates\fashe\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Content\templates\fashe\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Content\templates\fashe\vendor\bootstrap\js\popper.js" />
+    <Content Include="Content\templates\fashe\vendor\countdowntime\countdowntime.js" />
+    <Content Include="Content\templates\fashe\vendor\css-hamburgers\hamburgers.min.css" />
+    <Content Include="Content\templates\fashe\vendor\daterangepicker\daterangepicker.css" />
+    <Content Include="Content\templates\fashe\vendor\daterangepicker\daterangepicker.js" />
+    <Content Include="Content\templates\fashe\vendor\daterangepicker\moment.min.js" />
+    <Content Include="Content\templates\fashe\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Content\templates\fashe\vendor\lightbox2\css\lightbox.min.css" />
+    <Content Include="Content\templates\fashe\vendor\lightbox2\images\close.png" />
+    <Content Include="Content\templates\fashe\vendor\lightbox2\images\loading.gif" />
+    <Content Include="Content\templates\fashe\vendor\lightbox2\images\next.png" />
+    <Content Include="Content\templates\fashe\vendor\lightbox2\images\prev.png" />
+    <Content Include="Content\templates\fashe\vendor\lightbox2\js\lightbox.min.js" />
+    <Content Include="Content\templates\fashe\vendor\noui\nouislider.min.css" />
+    <Content Include="Content\templates\fashe\vendor\noui\nouislider.min.js" />
+    <Content Include="Content\templates\fashe\vendor\parallax100\parallax100.js" />
+    <Content Include="Content\templates\fashe\vendor\select2\select2.min.css" />
+    <Content Include="Content\templates\fashe\vendor\select2\select2.min.js" />
+    <Content Include="Content\templates\fashe\vendor\slick\slick.css" />
+    <Content Include="Content\templates\fashe\vendor\slick\slick.min.js" />
+    <Content Include="Content\templates\fashe\vendor\sweetalert\sweetalert.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\templates\fashe\fonts\elegant-font\html-css\fonts\ElegantIcons.eot" />
+    <Content Include="Content\templates\fashe\fonts\elegant-font\html-css\fonts\ElegantIcons.ttf" />
+    <Content Include="Content\templates\fashe\fonts\elegant-font\html-css\fonts\ElegantIcons.woff" />
+    <Content Include="Content\templates\fashe\fonts\elegant-font\html-css\fonts\ElegantIconsd41d.eot" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="Content\templates\fashe\fonts\font-awesome-4.7.0\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\templates\fashe\fonts\Linearicons-Free-v1.0.0\WebFont\Linearicons-Free.ttf" />
+    <Content Include="Content\templates\fashe\fonts\montserrat\Montserrat-Black.ttf" />
+    <Content Include="Content\templates\fashe\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Content\templates\fashe\fonts\montserrat\Montserrat-Italic.ttf" />
+    <Content Include="Content\templates\fashe\fonts\montserrat\Montserrat-Medium.ttf" />
+    <Content Include="Content\templates\fashe\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Content\templates\fashe\fonts\poppins\Poppins-Black.ttf" />
+    <Content Include="Content\templates\fashe\fonts\poppins\Poppins-Bold.ttf" />
+    <Content Include="Content\templates\fashe\fonts\themify\fonts\themify9f24.eot" />
+    <Content Include="Content\templates\fashe\fonts\themify\fonts\themify9f24.ttf" />
+    <Content Include="Content\templates\fashe\fonts\themify\fonts\themify9f24.woff" />
+    <Content Include="Content\templates\fashe\fonts\themify\fonts\themifyd41d.eot" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -270,7 +396,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49963</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49963/</IISUrl>
+          <IISUrl>https://localhost:44371/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
