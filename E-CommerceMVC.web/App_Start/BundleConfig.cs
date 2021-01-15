@@ -10,10 +10,10 @@ namespace E_CommerceMVC.web
         {
             bundles.Add(new StyleBundle("~/bundles/css").Include(
           "~/Content/templates/fashe/vendor/bootstrap/css/bootstrap.min.css",
-          "~/Content/templates/fashe/fonts/font-awesome-4.7.0/css/font-awesome.min.css",
-          "~/Content/templates/fashe/fonts/themify/themify-icons.css",
-          "~/Content/templates/fashe/fonts/Linearicons-Free-v1.0.0/icon-font.min.css",
-          "~/Content/templates/fashe/fonts/elegant-font/html-css/style.css",
+          //"~/Content/templates/fashe/fonts/font-awesome-4.7.0/css/font-awesome.min.css",
+          //"~/Content/templates/fashe/fonts/themify/themify-icons.css",
+          //"~/Content/templates/fashe/fonts/Linearicons-Free-v1.0.0/icon-font.min.css",
+          //"~/Content/templates/fashe/fonts/elegant-font/html-css/style.css",
           "~/Content/templates/fashe/vendor/animate/animate.css",
           "~/Content/templates/fashe/vendor/css-hamburgers/hamburgers.min.css",
           "~/Content/templates/fashe/vendor/animsition/css/animsition.min.css",
