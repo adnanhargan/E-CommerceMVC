@@ -167,6 +167,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Dashboard\Controllers\CategoriesController.cs" />
     <Compile Include="Areas\Dashboard\Controllers\DashboardController.cs" />
     <Compile Include="Areas\Dashboard\DashboardAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -2154,6 +2155,8 @@
     <Content Include="Content\templates\sb-admin2\vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="Content\templates\sb-admin2\vendor\jquery\jquery.min.map" />
     <Content Include="Content\templates\sb-admin2\vendor\jquery\jquery.slim.min.map" />
+    <Content Include="Areas\Dashboard\Views\Categories\Index.cshtml" />
+    <Content Include="Areas\Dashboard\Views\Categories\Action.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2215,6 +2218,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E-CommerceMVC.Data\E-CommerceMVC.Data.csproj">
+      <Project>{ef9376e2-e48a-4c7a-8806-3ece7a140a39}</Project>
+      <Name>E-CommerceMVC.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-CommerceMVC.Entities\E-CommerceMVC.Entities.csproj">
+      <Project>{8efe52ff-e4c4-47b5-8e87-40dbcda20b15}</Project>
+      <Name>E-CommerceMVC.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-CommerceMVC.Services\E-CommerceMVC.Services.csproj">
+      <Project>{6600f557-9917-4b19-8317-e46b4a154cb5}</Project>
+      <Name>E-CommerceMVC.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
