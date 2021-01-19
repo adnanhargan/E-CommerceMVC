@@ -22,5 +22,31 @@ namespace E_CommerceMVC.Services
             ECommerceDataContext context = new ECommerceDataContext();
             return context.Categories.ToList();
         }
+        public Category GetCategoryById(int ID)
+        {
+            ECommerceDataContext context = new ECommerceDataContext();
+            return context.Categories.Find(ID);
+        }
+        public bool UpdateCategory(Category category)
+        {
+            ECommerceDataContext context = new ECommerceDataContext();
+            var dbcategory = context.Categories.Find(category.ID);
+            if(dbcategory != null)
+            {
+                dbcategory.Name = category.Name;
+                dbcategory.Description = category.Description;
+            }
+            context.Entry(dbcategory).State = System.Data.Entity.EntityState.Modified;
+            return context.SaveChanges() > 0;
+        }
+
+        public bool DeleteCategory(int CategoryID)
+        {
+            ECommerceDataContext context = new ECommerceDataContext();
+            var dbcategory = context.Categories.Find(CategoryID);
+            if (dbcategory != null)
+            context.Entry(dbcategory).State = System.Data.Entity.EntityState.Deleted;
+            return context.SaveChanges() > 0;
+        }
     }
 }

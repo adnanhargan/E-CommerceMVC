@@ -1,9 +1,6 @@
 ﻿using E_CommerceMVC.Entities;
 using E_CommerceMVC.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using E_CommerceMVC.web.Areas.Dashboard.ViewModels;
 using System.Web.Mvc;
 
 namespace E_CommerceMVC.web.Areas.Dashboard.Controllers
@@ -18,17 +15,53 @@ namespace E_CommerceMVC.web.Areas.Dashboard.Controllers
             return View(AllCategories);
         }
         [HttpGet]
-        public ActionResult Action()
+        public ActionResult Action(int? ID)
         {
-            return View();
+            var model = new CategoryActionViewModels();
+            CategoryService categoryService = new CategoryService();
+            if (ID.HasValue)
+            {
+                var category = categoryService.GetCategoryById(ID.Value);
+                if (category == null) return HttpNotFound();
+
+                model.ID = category.ID;
+                model.Name = category.Name;
+                model.Description = category.Description;
+            }
+            return View(model);
         }
 
         [HttpPost]
-        public ActionResult Action(Category category)
+        public ActionResult Action(CategoryActionViewModels model)
         {
             CategoryService categoryService = new CategoryService();
+            var category = new Category()
+            {
+                ID = model.ID.HasValue ? model.ID.Value : 0,
+                Name = model.Name,
+                Description = model.Description
+            };
+            if(model.ID.HasValue)
+            {
+            categoryService.UpdateCategory(category);
+            }
+            else
+            {
             categoryService.SaveCategry(category);
+            }
+
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public JsonResult Delete(int ID)
+        {
+            CategoryService categoryService = new CategoryService();
+
+            JsonResult json = new JsonResult();
+            var result = categoryService.DeleteCategory(ID);
+            json.Data = new { isSuccess = result };
+            return json;
         }
     }
 }
